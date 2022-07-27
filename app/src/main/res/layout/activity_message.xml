@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcolor"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignEnd="@+id/message_editText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="-88dp"
+        android:background="@color/white"
+        android:baselineAligned="false">
+
+        <ImageButton
+            android:id="@+id/Button_reports"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/white"
+            android:minWidth="48dp"
+            app:srcCompat="@drawable/report"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/ChatPostID"
+            android:layout_width="185dp"
+            android:layout_height="60dp"
+            android:fontFamily="@font/jalnan"
+            android:paddingTop="13dp"
+            android:text="ID님"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/Button_destInfo_message"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/jalnan"
+            android:text="상대정보" />
+
+        <Button
+            android:id="@+id/Button_comple_message"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/jalnan"
+            android:text="거래완료" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/message_recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="631dp"
+        android:layout_above="@+id/message_btn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="52dp" />
+
+    <EditText
+        android:id="@+id/message_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_below="@+id/message_recyclerview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/message_btn"
+        android:background="#d9d9d9"
+        android:hint="채팅을 입력하세요"
+        android:fontFamily="@font/jalnan"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/message_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/jalnan"
+        android:text="전송"
+
+
+        />
+
+</RelativeLayout>

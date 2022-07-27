@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#d9d9d9"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="200dp">
+
+    <!-- 타이틀바 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@drawable/backgroundcolor"
+            android:gravity="center"
+            android:fontFamily="@font/jalnan"
+            android:text="후기를 남겨주세요!"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <!-- //end 타이틀바 -->
+
+
+    <!-- Notice -->
+
+    <RatingBar
+        android:id="@+id/Rating_review"
+        android:layout_width="wrap_content"
+        android:background="#d9d9d9"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:isIndicator="false"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:rating="5" />
+
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/EditText_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/jalnan"
+            android:textColor="@color/black"
+            android:hint="20자 이내로 작성해주세요."
+            android:maxLength="20"
+            android:textColorHint="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <!-- Notice -->
+
+    <View
+        android:background="#66bdbdbd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <!-- 닫기 버튼 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/Button_review_complete"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#00000000"
+            android:fontFamily="@font/jalnan"
+            android:gravity="center"
+            android:onClick="mOnClose"
+            android:text="확인"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <!--// 닫기 버튼 -->
+</LinearLayout>

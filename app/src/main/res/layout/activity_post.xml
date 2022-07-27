@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundcolor"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:fontFamily="@font/jalnan"
+            android:textColor="@color/black"
+            android:text="제목"
+            />
+
+        <EditText
+            android:id="@+id/EditText_title_post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E2F6D5"
+            android:fontFamily="@font/jalnan"
+            android:hint="제목을 입력하세요."
+            android:backgroundTint="@color/white"
+            android:padding="13dp"
+            android:privateImeOptions="defaultInputmode=korean"
+            android:textColor="#000"
+            android:textColorHint="#606060"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:fontFamily="@font/jalnan"
+            android:textColor="@color/black"
+            android:text="가격"
+            />
+
+        <EditText
+            android:id="@+id/EditText_title_pay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E2F6D5"
+            android:fontFamily="@font/jalnan"
+            android:hint="가격을 입력하세요."
+            android:backgroundTint="@color/white"
+            android:padding="13dp"
+            android:privateImeOptions="defaultInputmode=korean"
+            android:textColor="#000"
+            android:textColorHint="#606060"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:fontFamily="@font/jalnan"
+        android:textColor="@color/black"
+        android:text="내용"/>
+
+    <EditText
+        android:id="@+id/EditText_write_post"
+        android:layout_width="match_parent"
+        android:layout_height="563dp"
+        android:layout_weight="1"
+        android:background="#E2F6D5"
+        android:fontFamily="@font/jalnan"
+        android:hint="내용을 입력하세요."
+        android:backgroundTint="@color/white"
+        android:textColorHint="#606060"
+        android:textColor="#000"
+        android:padding="16dp"
+        android:privateImeOptions="defaultInputmode=korean"/>
+
+    <Button
+        android:id="@+id/Button_accept_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#41C5D3"
+        android:onClick="onButton1Clicked"
+        android:fontFamily="@font/jalnan"
+        android:text="등록하기"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/TextView_destUid_Post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="0dp"
+        android:text="TextView"
+        tools:visibility="invisible" />
+
+
+</LinearLayout>

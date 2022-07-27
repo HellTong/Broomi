@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundcolor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:fontFamily="@font/jalnan"
+            android:textColor="@color/black"
+            android:text="제목"
+            />
+
+        <EditText
+            android:id="@+id/EditText_title_modify_post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E2F6D5"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/jalnan"
+            android:padding="13dp"
+            android:privateImeOptions="defaultInputmode=korean"
+            android:textColor="#000"
+            android:textColorHint="#606060" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:fontFamily="@font/jalnan"
+            android:padding="16dp"
+            android:text="가격"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/EditText_modify_pay"
+            android:layout_width="322dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E2F6D5"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/jalnan"
+            android:padding="13dp"
+            android:privateImeOptions="defaultInputmode=korean"
+            android:textColor="#000"
+            android:textColorHint="#606060" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:fontFamily="@font/jalnan"
+        android:textColor="@color/black"
+        android:text="내용"/>
+
+    <EditText
+        android:id="@+id/EditText_write_modify_post"
+        android:layout_width="match_parent"
+        android:layout_height="563dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:fontFamily="@font/jalnan"
+        android:textColorHint="#606060"
+        android:textColor="#000"
+        android:padding="16dp"
+        android:privateImeOptions="defaultInputmode=korean"/>
+
+    <Button
+        android:id="@+id/Button_accept_modify_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#41C5D3"
+        android:onClick="onButton1Clicked"
+        android:fontFamily="@font/jalnan"
+        android:text="수정하기"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView_destUid_modify"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="0dp"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+
+</LinearLayout>

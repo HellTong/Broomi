@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/backgroundcolor">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jalnan"
+        android:padding="10dp"
+        android:text="신고/건의 유저"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:text="ID님"
+        android:fontFamily="@font/jalnan"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="51dp"
+      android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="@font/jalnan"
+        android:textColor="@color/black"
+        android:text="제목" />
+
+    <EditText
+        android:id="@+id/EditText_Title_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:fontFamily="@font/jalnan"
+        android:hint="제목을 입력하세요."
+        android:padding="10dp"
+        android:privateImeOptions="defaultInputmode=korean"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="363dp"
+      android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jalnan"
+        android:padding="16dp"
+        android:text="신고"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/TextView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:text="ID님"
+        android:fontFamily="@font/jalnan"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+  </LinearLayout>
+
+  <EditText
+      android:id="@+id/EditText_write_report"
+      android:layout_width="380dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:background="@color/white"
+      android:fontFamily="@font/jalnan"
+      android:hint="내용을 입력하세요."
+      android:padding="16dp"
+      android:privateImeOptions="defaultInputmode=korean"
+      android:textColor="@color/black"
+      android:textColorHint="@color/black" />
+
+  <Button
+      android:id="@+id/Button_report"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#41C5D3"
+      android:onClick="onButton1Clicked"
+      android:text="신고/건의 하기"
+      android:textColor="#FFFFFF" />
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "299627492422",
+    "project_id": "broomi-c6895",
+    "storage_bucket": "broomi-c6895.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299627492422:android:cdf611cbcf93bfab880647",
+        "android_client_info": {
+          "package_name": "com.MKE.broomi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "299627492422-6s8lqilm8rq02k6u3infnpo1mirrm2q1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVCEoaBunEB3X15WZ6Op0zudLLPKxOr2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "299627492422-6s8lqilm8rq02k6u3infnpo1mirrm2q1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

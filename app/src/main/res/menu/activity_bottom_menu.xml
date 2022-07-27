@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/chat_24"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:title="채팅"/>
+    <item
+        android:id="@+id/report_24"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_report_24"
+        android:title="신고"/>
+    <item
+        android:id="@+id/notes_24"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_speaker_notes_24"
+        android:title="게시물 작성"/>
+
+</menu>
